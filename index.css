@@ -1,0 +1,146 @@
+
+html{
+    height: 100%;
+}
+
+body{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+@keyframes slowzoom{
+    0%;{
+        transform: scale(1.5);
+}
+        100% {
+            transform: scale(1.5);
+        }
+    }
+
+
+
+
+
+body::before{
+    background:url("mi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: slowzoom 20s ease-in-out infinite alternate;
+
+}
+
+.signupBox {
+    width: 250px;
+    height: 404px;
+    background:rgba(1, 1, 3, 0.8);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.loginLink {
+    color:red;
+    font-size: 15px;
+    text-decoration:double;
+    margin-top: -20px;
+}
+.signupBox input {
+    width: 100%;
+    margin-bottom: 2px;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.signupBox button {
+    width: 50%;
+    background: #960101;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    color: #fff;
+    margin-left: 25%;
+    margin-top: 6px;
+}
+.signupBox h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: left;
+    font-size: 22px;
+    color: #d00404;
+}
+.signupBox button:hover { 
+    background: black;
+}
+.signupBox input::focus {
+    outline: none;
+    box-shadow: 0 0 6px #4a4ae8;
+    background: #f00;
+}
+
+.text{
+     margin-top: 10px;
+  margin-bottom: 10px;
+}
+.last{
+     margin-top: 10px;
+  margin-bottom: 10px;
+}
+.email{
+     margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pass{
+     margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cpass{
+     margin-top: 10px;
+  margin-bottom: 10px;
+} 
+.number{
+     margin-top: 10px;
+  margin-bottom: 10px;
+} 
+.date{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
